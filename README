@@ -1,0 +1,22 @@
+u-boot:
+	tar jxf gcc-linaro-arm-linux-gnueabihf-4.7-2013.04-20130415_linux.tar.bz2
+	export ARCH=arm
+	export CROSS_COMPILE=[path to ...]/bin/arm-linux-gnueabihf-
+	cd u-boot
+	make odroid_config
+	make
+
+host-kernel:
+	tar xvfz arm-eabi-4.6.tar.gz
+	export ARCH=arm
+	export CROSS_COMPILE=[path to ...]/arm-eabi-4.6/bin/arm-eabi-
+	cd host-kernel
+	make odroidxu3_kvm_defconfig
+	make -j9
+	
+	make modules_install
+
+guest-kernel:
+	cp configs/guest_config guest-kernel
+	make -j9 zImage dtbs
+
