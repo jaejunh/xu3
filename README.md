@@ -39,6 +39,8 @@ For host kernel, http://dn.odroid.com/ODROID-XU/compiler/arm-eabi-4.6.tar.gz
 
 Download the newer toolchain for kernel and u-boot, http://releases.linaro.org/14.11/components/toolchain/binaries/arm-linux-gnueabihf/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf.tar.xz
     
+##### Update:      http://releases.linaro.org/components/toolchain/binaries/4.9-2016.02/arm-linux-gnueabihf/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf.tar.xz
+    
 ####Compile u-boot
 
 Running the following commands:
