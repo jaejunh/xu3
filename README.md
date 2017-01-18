@@ -39,7 +39,7 @@ For host kernel, http://dn.odroid.com/ODROID-XU/compiler/arm-eabi-4.6.tar.gz
 
 Download the newer toolchain for kernel and u-boot, http://releases.linaro.org/14.11/components/toolchain/binaries/arm-linux-gnueabihf/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf.tar.xz
     
-##### Update:      http://releases.linaro.org/components/toolchain/binaries/4.9-2016.02/arm-linux-gnueabihf/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf.tar.xz
+##### JAEJUNH Update 2017.1.18:      http://releases.linaro.org/components/toolchain/binaries/4.9-2016.02/arm-linux-gnueabihf/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf.tar.xz
     
 ####Compile u-boot
 
@@ -48,6 +48,10 @@ Running the following commands:
 	tar jxf gcc-linaro-arm-linux-gnueabihf-4.7-2013.04-20130415_linux.tar.bz2
 	export ARCH=arm
 	export CROSS_COMPILE=[path to your compile toolchain folder]/bin/arm-linux-gnueabihf-
+	
+##### JAEJUNH Update 2017.1.18:   
+	git clone https://github.com/hardkernel/u-boot.git -b odroidxu3-v2012.07
+	
 	cd u-boot
 	make odroid_config
 	make
